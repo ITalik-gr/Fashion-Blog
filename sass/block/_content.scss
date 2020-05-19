@@ -1,0 +1,234 @@
+
+.content {
+  padding-top: 60px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.left-block {
+  display: flex;
+  justify-content: space-around;
+  //! width: 100%; вкл на каком то
+  flex-wrap: wrap;
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__card {
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 370px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &-b {
+      margin: 30px 0px;
+      justify-content: start;
+      align-items: start;
+      max-width: 770px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+      .left-block__card__title {
+        text-align: left;
+      }
+      .left-block__card__text {
+        padding-left: 30px;
+       padding-right: 30px;
+      }
+    }
+    &__sub {
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 24px;
+      color: #666666;
+      p {
+        width: 615px;
+      }
+    }
+    &__text {
+      padding: 15px 40px;
+    }
+    &__img {
+      img {
+        width: 100%;
+      }
+    }
+    &__category {
+      // margin-top: 15px;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #C9A96E;
+
+    }
+    &__title {
+      margin-top: 5px;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      color: #171717;
+      
+    }
+    &__descr {
+      margin-top: 10px;
+      font-size: 12px;
+      line-height: 16px;
+      color: #666666;
+      span {
+        color: #B1B1B1;
+      }
+    }
+  }
+}
+.right-block {
+  &__title {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #171717;
+    padding: 15px 70px;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  &__post {
+    margin-bottom: 30px;
+    max-width: 270px;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    &__img {
+
+    }
+    &__text {
+      padding: 20px 20px 15px 20px;
+    }
+    &__title {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+      color: #171717;
+    }
+     &__descr {
+       margin-top: 5px;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      color: #B1B1B1;
+      
+     } 
+     &__subtitle {
+       margin-top: 15px;
+      font-size: 14px;
+      line-height: 24px;
+      color: #666666;
+      p {
+        text-align: center;
+      }
+     }
+     &__more {
+       display: block;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #C9A96E;
+      padding: 15px 0px;
+      text-align: center;
+      border-top: 1px solid #E5E5E5;
+      transition: 0.5s all;
+      &:hover {
+        background: #C9A96E;
+        color: #FFFFFF;
+        cursor: pointer;
+        text-decoration: none;
+      }
+     }
+  }
+}
+
+.categories {
+  &__str {
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 15px 0px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
+    transition: 0.5s all;
+    &:hover {
+      color: #666666;
+      text-decoration: none;
+      border-bottom: 1px solid rgb(153, 153, 153);
+    }
+
+    &:last-child {
+      border: none;
+    }
+    span {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  &__block {
+    margin: 1px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+    background: #F8F9FA;
+    padding: 17px 20px 13px 20px;
+    width: 88px;
+    height: 88px;
+    transition: 0.5s all;
+    &:hover {
+      background: rgba(201, 169, 110, 0.514);
+      color: #FFFFFF;
+      transform: translateY(-5px);
+    }
+  }
+  &__text {
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+  }
+  &__num {
+    margin-top: 6px;
+    text-align: center;
+  }
+  &__img {
+
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  &__block {
+    font-size: 14px;
+    color: #666666;
+    padding: 5px 15px;
+    background: #F8F9FA;
+    margin: 3px;
+    transition: 0.5s all;
+    &:hover {
+      text-decoration: none;
+      background: rgba(201, 169, 110, 0.514);
+
+      color: #666666;
+      transform: translateY(-5px);
+    }
+  }
+}

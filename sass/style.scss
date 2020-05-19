@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container-fluid {
+  padding-right: 65px;
+  padding-left: 65px;
+}
+body {
+  font-family: 'PT Serif', serif;
+  margin: 0;
+  font-weight: normal;
+}
+*,*::before,*::after {
+  box-sizing: border-box;
+
+}
+:focus,:active {
+  outline: none;
+}
+a:focus,a:active {
+  outline: none;
+}
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 0 1200px auto;
+}
+.mt7 {
+  margin-top: 70px!important;
+}
+@import '../sass/block/button';
+@import '../sass/block/footer';
+@import '../sass/block/header';
+@import '../sass/block/content';
+@import '../sass/block/button-group';
